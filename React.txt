@@ -1,0 +1,38 @@
+node -v
+npm -v
+npm install -g npm  
+npx create-react-app react1
+
+cd react1
+npm start
+
+step-1:
+in src create new file as HelloWorld.jsx
+import react from "react"
+function HelloWorld() 
+{
+    return(
+        <div>
+            <hi>Hello World</hi>
+        </div>
+    )
+}
+export default HelloWorld;
+
+
+
+step-2:
+rename file app.js as app.jsx
+remove code and type rfce and enter
+
+import React from 'react'
+import HelloWorld from './HelloWorld'
+function App() {
+  return (
+    <div>
+      <HelloWorld/>
+    </div>
+  )
+}
+
+export default App
